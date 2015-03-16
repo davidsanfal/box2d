@@ -24,7 +24,7 @@
 #if defined(__APPLE__)
 #include <OpenGL/gl3.h>
 #else
-#include <glew/glew.h>
+#include <GL/glew.h>
 #endif
 
 #include <GLFW/glfw3.h>
@@ -430,7 +430,7 @@ static void sInterface()
 //
 int main(int argc, char** argv)
 {
-#if defined(_WIN32)
+#if defined(_WIN32) && !defined(__MINGW32__)
 	// Enable memory-leak reports
 	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG));
 #endif

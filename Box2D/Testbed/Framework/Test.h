@@ -21,6 +21,10 @@
 
 #include <Box2D/Box2D.h>
 #include "Render.h"
+#ifdef __APPLE__
+	#include <random>
+#endif
+
 #include <random>
 
 #include <stdlib.h>

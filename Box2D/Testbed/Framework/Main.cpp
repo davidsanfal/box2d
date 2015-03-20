@@ -24,10 +24,18 @@
 #if defined(__APPLE__)
 #include <OpenGL/gl3.h>
 #else
+#if defined(BIICODE)
 #include <GL/glew.h>
+#else
+#include <glew/glew.h>
+#endif
 #endif
 
+#if defined(BIICODE)
 #include <GLFW/glfw3.h>
+#else
+#include <glfw/glfw3.h>
+#endif
 #include <stdio.h>
 
 #ifdef _MSC_VER

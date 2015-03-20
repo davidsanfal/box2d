@@ -25,7 +25,11 @@
 #ifdef __APPLE__
 #include <OpenGL/gl3.h>
 #else
+#if defined(BIICODE)
 #include <GL/glew.h>
+#else
+#include <glew/glew.h>
+#endif
 #include <GL/gl.h>
 #endif
 

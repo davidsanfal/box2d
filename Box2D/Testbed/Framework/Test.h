@@ -25,8 +25,6 @@
 	#include <random>
 #endif
 
-#include <random>
-
 #include <stdlib.h>
 
 class Test;

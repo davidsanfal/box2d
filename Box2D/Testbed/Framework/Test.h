@@ -24,6 +24,7 @@
 
 #if defined(__APPLE__)
 #include <OpenGL/gl3.h>
+#include <random>
 #else
 #if defined(BIICODE)
 #include <GL/glew.h>
